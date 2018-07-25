@@ -7,7 +7,6 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import java.util.Calendar;
 
 
 public class MovieDetailsActivity extends AppCompatActivity {
@@ -29,15 +28,15 @@ public class MovieDetailsActivity extends AppCompatActivity {
         tvTheatre=findViewById(R.id.textViewTheatre);
         rbStar = findViewById(R.id.ratingBar);
 
-        Intent intentRecieved = getIntent();
-        String displayTitle = intentRecieved.getStringExtra("title");
-        String displayYear = intentRecieved.getStringExtra("year");
-        String displayGenre = intentRecieved.getStringExtra("genre");
-        String displayDate = intentRecieved.getStringExtra("date");
-        String displayTheater = intentRecieved.getStringExtra("theater");
-        String displayDescription = intentRecieved.getStringExtra("description");
-        String displayRated = intentRecieved.getStringExtra("rated");
-        int displayStar = intentRecieved.getIntExtra("star", 0);
+        Intent intentReceived = getIntent();
+        String displayTitle = intentReceived.getStringExtra("title");
+        String displayYear = intentReceived.getStringExtra("year");
+        String displayGenre = intentReceived.getStringExtra("genre");
+        String displayDate = intentReceived.getStringExtra("date");
+        String displayTheater = intentReceived.getStringExtra("theater");
+        String displayDescription = intentReceived.getStringExtra("description");
+        String displayRated = intentReceived.getStringExtra("rated");
+        int displayStar = intentReceived.getIntExtra("star", 0);
         tvTitle.setText(displayTitle);
         tvYear.setText(displayYear + "-");
         tvGenre.setText(displayGenre);

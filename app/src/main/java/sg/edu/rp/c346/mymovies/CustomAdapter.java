@@ -37,7 +37,6 @@ public class CustomAdapter extends ArrayAdapter {
         TextView tvGenre = rowView.findViewById(R.id.textViewGenre);
         ImageView ivRated = rowView.findViewById(R.id.imageViewRated);
 
-
         MovieItem currentItem = movieList.get(position);
 
         tvName.setText(currentItem.getMovieName());
